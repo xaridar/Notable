@@ -1,0 +1,147 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+  <!-- App name, used for the home screen -->
+  <string name="app_name" translatable="false">Notable</string>
+  <!-- Email label, used as a hint for inputs -->
+  <string name="email">Email</string>
+  <!-- Password label, used as a hint for inputs -->
+  <string name="password">Password</string>
+  <!-- Username label, used as a hint for inputs -->
+  <string name="username">Username</string>
+  <!-- Text shown on a form submission button and home screen button -->
+  <string name="sign_up">Sign Up</string>
+  <!-- Following 5 strings are signup and login errors, which are used for text onscreen -->
+  <string name="username_blank_error">Username cannot be blank.</string>
+  <string name="password_blank_error">Password cannot be blank.</string>
+  <string name="email_blank_error">Email cannot be blank.</string>
+  <string name="invalid_email">Invalid email address</string>
+  <string name="username_in_use">Username already in use.</string>
+
+  <!-- Content descriptor for a button which is used to choose an avatar -->
+  <string name="avatar_choice_button">Avatar choice button</string>
+  <!-- Guide text for using the aforementioned button -->
+  <string name="tap_avatar_to_change">Tap avatar to change</string>
+  <!-- Activity label -->
+  <string name="settings">Settings</string>
+  <!-- Activity label -->
+  <string name="pick_avatar">Pick an Avatar</string>
+  <!-- Activity label -->
+  <string name="pick_username">Choose a username</string>
+  <!-- Activity label -->
+  <string name="email_signup">Sign Up Using Email</string>
+  <!-- Activity label -->
+  <string name="phone_auth">Log In Using Phone Number</string>
+  <!-- Text shown on a form submission button and home screen button -->
+  <string name="log_in">Log In</string>
+  <!-- Activity label -->
+  <string name="email_login">Log In Using Email</string>
+  <!-- Label for a text field used t specify the content of a new note; appears as a label onscreen -->
+  <string name="note_content">Note Content</string>
+  <!-- Label on a button for submitting a new Note -->
+  <string name="post">Post</string>
+  <!-- Error message for Note creation; appears as a label. -->
+  <string name="no_empty_note">Cannot create an empty note.</string>
+  <!-- Used as a placeholder string for Note fields while a network request is being made; used in multiple labels of different length so should be short -->
+  <string name="loading">Loading…</string>
+  <!-- Content descriptor / meta information for user avatars in Note views -->
+  <string name="user_avatar">user avatar</string>
+  <!-- Button label to return to the main screen -->
+  <string name="back">Back</string>
+  <!-- Placeholder text used when an error occurs in location fetching on Note display -->
+  <string name="loc_unavailable">Location Unavailable</string>
+  <!-- Button label for skipping the avatar selection process during registration -->
+  <string name="skip_for_now">Skip for now</string>
+  <!-- Button label for advancing past a part of registration -->
+  <string name="go">Go</string>
+  <!-- Activity label -->
+  <string name="create_note">Create Note</string>
+  <!-- Floating action button label to view local Notes -->
+  <string name="notes">notes</string>
+  <!-- Button label for viewing all Notes -->
+  <string name="see_all_notes">See all Notes</string>
+  <!-- Greeting for a user used for main activity label -->
+  <string name="greeting">Hello, <xliff:g id="username" example="user123">%1$s</xliff:g></string>
+  <!-- Displayed on a Toast as an error during Note fetching -->
+  <string name="query_cancelled">Query cancelled.</string>
+  <!-- Displayed on a Toast as a general error -->
+  <string name="something_went_wrong">Something went wrong. Please try again.</string>
+  <!-- Displayed on a Toast as an error during Note fetching -->
+  <string name="note_not_found">Note not found.</string>
+  <!-- General use error label -->
+  <string name="an_error_occurred">An error occurred, please try again.</string>
+  <!-- Button label shown on home screen -->
+  <string name="sign_in_with_phone_number">Sign in with Phone Number</string>
+  <!-- home screen label for use before log in button -->
+  <string name="already_have_an_account">Already have an account?</string>
+  <!-- Large-font label used on initial startup of the app, displayed alongside registration options; 25 characters max besides Notable text -->
+  <string name="welcome_to_notable">Welcome to <xliff:g id="app_name">Notable</xliff:g></string>
+  <!-- Centered string for splitting up sign in options on the home screen -->
+  <string name="or">OR</string>
+  <!-- Page header with instructions about how to proceed with phone authentication -->
+  <string name="enter_your_phone_number">Enter your phone number</string>
+  <!-- Notice label presented upon deciding to log in using a phone number; uses standard language -->
+  <string name="SMS_warning">An SMS message will be sent to the provided number. Standard data rates may apply.</string>
+  <!-- Hint text for a text input designating its required input of a phone number -->
+  <string name="phone_number">Phone #</string>
+  <!-- Text shown on a form submission button to proceed to the next step of phone authentication -->
+  <string name="send_one_time_password">Send One Time Password</string>
+  <!-- Error message displayed onscreen on a label -->
+  <string name="invalid_number">Invalid phone number</string>
+  <!-- Page header for OTP authentication -->
+  <string name="enter_your_one_time_password">Enter your One-Time Password</string>
+  <!-- Page sub-header for OTP authentication -->
+  <string name="sent_OTP">A One-Time Password has been sent to <xliff:g id="phone_number" example="+1 800 777 7689">%1$s</xliff:g>.</string>
+  <!-- Error message displayed onscreen on a label -->
+  <string name="invalid_code">Invalid Code</string>
+  <!-- Button label for displaying phone number input screen -->
+  <string name="resend_sms">Resend SMS</string>
+  <!-- Button label shown in settings page -->
+  <string name="change_avatar">Change Avatar</string>
+  <!-- Content descriptor for a button which is used to remove a user's current avatar -->
+  <string name="remove_avatar">Remove avatar</string>
+  <!-- Page header for setting username -->
+  <string name="set_username">Set Username</string>
+  <!-- Error message displayed onscreen on a label -->
+  <string name="no_empty_username">Cannot have empty username.</string>
+  <!-- Button label shown in settings page -->
+  <string name="change_username">Change Username</string>
+  <!-- Button label shown in settings page, or as an action for larger displays -->
+  <string name="logout">Logout</string>
+  <!-- Prompt shown on account deletion. Used as a dialog title -->
+  <string name="delete_account">Delete Account</string>
+  <!-- Negative action for prompt on account deletion. Used as a dialog action -->
+  <string name="never_mind">Never mind</string>
+  <!-- Positive action for prompt on account deletion. Used as a dialog action -->
+  <string name="yes_im_sure">Yes, I\'m sure</string>
+  <!-- Prompt for reentering password on account deletion. Used as a dialog title -->
+  <string name="reenter_password">Re-enter Password</string>
+  <!-- Dialog title presented on attempt to delete account -->
+  <string name="are_you_sure">Are you sure?</string>
+  <!-- Long warning message displayed on a Dialog on account deletion -->
+  <string name="are_you_sure_long">Are you sure you want to delete your <xliff:g id="app_name">Notable</xliff:g> account?\n\nThis action is not reversible.</string>
+  <!-- Positive action after confirming password for account deletion; Used as a dialog action -->
+  <string name="del_my_acct">Delete my account</string>
+  <!-- Error message displayed onscreen on a label -->
+  <string name="no_password">No password given.</string>
+  <!-- Error message displayed onscreen on a label -->
+  <string name="incorrect_password">Incorrect password.</string>
+  <!-- Small button text for sending a password reset email -->
+  <string name="forgot_your_password">Forgot your Password?</string>
+  <!-- Activity label -->
+  <string name="forgot_password">Forgot Password</string>
+  <!-- Page header for entering email for password reset -->
+  <string name="enter_your_email">Enter Your Email</string>
+  <!-- Activity label -->
+  <string name="nearby_notes">Nearby Notes</string>
+  <!-- Activity label -->
+  <string name="reset_password">Reset Password</string>
+  <!-- Button label for sending password reset email -->
+  <string name="send_reset_email">Send Reset Email</string>
+  <!-- Password reset instruction text; shown onscreen in a Toast message -->
+  <string name="reset_sent">An email has been sent to <xliff:g id="email_address" example="user@example.com">%1$s</xliff:g> containing instructions to update your password.</string>
+  <!-- Button label for confirming new password for password reset -->
+  <string name="confirm">Confirm</string>
+  <!-- Information message displayed on a Toast -->
+  <string name="google_un_in_use">Your Google username is currently in use. Please select a new username.</string>
+  <!-- Short instructions displayed in general settings page before selection of a setting on large displays; space exists for longer strings -->
+  <string name="select_left_setting_msg">Select a setting on the left to edit it.</string>
+</resources>

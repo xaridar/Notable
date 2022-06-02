@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xaridar.notable">
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:name="androidx.multidex.MultiDexApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Notable">
+        <activity
+            android:name=".login.NewPassActivity"
+            android:exported="true"
+            android:label="@string/reset_password">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="http" />
+                <data android:scheme="https" />
+                <data android:path="/__/auth/action" />
+                <data android:host="notable-350520.firebaseapp.com" />
+                <data android:host="notable-350520.web.app" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".login.ForgotPasswordActivity"
+            android:label="@string/forgot_password">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.EmailLoginActivity" />
+        </activity>
+        <activity
+            android:name=".login.ChooseUsernameActivity"
+            android:label="@string/pick_username" />
+        <activity
+            android:name=".login.PhoneAuthActivity"
+            android:label="@string/phone_auth">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".app.NoteListActivity"
+            android:label="@string/nearby_notes" />
+        <activity
+            android:name=".app.CreateNoteActivity"
+            android:label="@string/create_note" />
+        <activity
+            android:name=".app.NoteActivity"
+            android:label=" " />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".login.EmailLoginActivity"
+            android:label="@string/email_login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.HomeActivity" />
+        </activity>
+        <activity
+            android:name=".login.HomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Notable.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.SettingsActivity"
+            android:label="@string/settings" />
+        <activity android:name=".app.MainActivity" />
+        <activity
+            android:name=".login.ChooseAvatarActivity"
+            android:label="@string/pick_avatar" />
+        <activity
+            android:name=".login.EmailSignupActivity"
+            android:label="@string/email_signup">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".login.HomeActivity" />
+        </activity>
+    </application>
+
+</manifest>
