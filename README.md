@@ -15,6 +15,6 @@ Notable has completely gotten rid of the idea of followers or likes - instead, t
 This way, local users can create connections by meeting others in Notable, and learn more of ther toughts that the local area has to offer.
 And Notable is especially unique when traveling - it provides a new way to explore different location and locate all of its popular spots.
 
-
+<br><br><br>
 
 Notable was built in Android Studio using Java and XML, with serveral Firebase products acting as its backend, including authentication, database management, and file storage.
